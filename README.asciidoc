@@ -1,1 +1,30 @@
+# Facebook Friend Recommendation
 
+The format of both files is the same: +
+The first line of the file is an integer representing the number of users in the given network. +
+other lines are the IDs of two users who are friends.
+
+For example, here is a very small file that has 5 users in the social network: + 
+5 +
+0 1 +
+1 2 +
+1 4 +
+2 3 
+
+The above is a representation of a social network that contains 5 users. +
+User ID=0 is friends with User IDs = 1 +
+User ID=1 is friends with User IDs = 0, 2, 4 +
+User ID=2 is friends with User IDs = 1, 3 +
+User ID=3 is friends with User IDs = 2 +
+User ID=4 is friends with User IDs = 1
+
+big.txt has 1000 users.
+small.txt has 10 users.
+
+for small one, result: +
+  The suggested friend for 0 is 9 +
+  The suggested friend for 3 is 1
+  
+for big one, result: +
+  The suggested friend for 88 is 213 +
+  The suggested friend for 5 is 67
